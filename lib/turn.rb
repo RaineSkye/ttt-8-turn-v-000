@@ -29,7 +29,8 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-  board[index] != " " || board[index] != ""
+  board[index] == " " || board[index] == ""
+    return true
 end
 
 def input_to_index(int)
